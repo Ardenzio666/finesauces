@@ -49,7 +49,7 @@
     <div class="row no-gutters">
       {% for product in products %}
       <div class="col-sm-6">
-        <a href="{{ product.get_absolute_url }}" class="h2 text-dark text-decoration-none">
+        <a href="{{ product.get_absolute_url }}" class="text-dark text-decoration-none">
           <div class="card product">
             <div class="item">
               <div class="item-image">
@@ -57,7 +57,7 @@
                 class="img-fluid rounded-0">
               </div>
               <div class="card-body text-center">
-                {{ product.name }}
+                <h5 class="mb-2">{{ product.name }}</h5>
                 <hr>
                 <span>${{ product.price }}</span>
                 <div>
